@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="main.css"-->
+    <style>
+      body {
+        background-image: url('https://images.pexels.com/photos/1358534/pexels-photo-1358534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      </style>
+    <title>
+        Gesture Recognition System
+    </title>
+</head>
+<body>
+<!--navigation bar-->
+<nav class="navbar navbar-expand-md navbar-light">
+<marquee behavior="alternate" direction="left">
+    <img src="C:\Users\Chinna\Downloads\one.jpg" width="120" height="80" alt="Natural" />
+  </marquee>
+<br>
+<marquee behavior="alternate" direction="left">
+    <img src="C:\Users\Chinna\Downloads\two.jpeg" width="120" height="100" alt="Natural" />
+  </marquee>
+<br>
+<marquee behavior="alternate" direction="left">
+    <img src="C:\Users\Chinna\Downloads\three.jpeg" width="120" height="100" alt="Natural" />
+  </marquee>
+<marquee behavior="alternate" direction="left">
+    <img src="C:\Users\Chinna\Downloads\five.jpeg" width="120" height="100" alt="Natural" />
+  </marquee>
+<marquee behavior="alternate" direction="left">
+    <img src="C:\Users\Chinna\Downloads\six.jpeg" width="120" height="100" alt="Natural" />
+  </marquee>
+<marquee behavior="alternate" direction="left">
+    <img src="C:\Users\Chinna\Downloads\seven.jpeg" width="120" height="100" alt="Natural" />
+  </marquee>  
+<br>
+<div class="container-xxl">
+    <a href="{{ url_for('home')}}" class="navbar-brand">
+      <span class="fw-normal  text-black">
+        
+      </span>
+    </a>
+    <!--menu(toggle) button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--navbar links-->
+    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="{{ url_for('home')}}" class="nav-link active"><u>Home</u></a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('intro')}}" class="nav-link active"><u>Introduction</u></a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('image1')}}" class="nav-link active"><u>Launch</u></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+          <marquee> <br> <h2>Hand Gesture Recognition System </marquee> </h2>
+<table style="width:100%">
+      <tr>
+        <th><img src="https://media.tenor.com/images/30169e4a670daf12443df7d2dd140176/tenor.gif" alt="NOT AVAILABLE"
+            width="200" height="200"></th>
+      </tr>
+    </table>  
+<div class="container-lg m-3">
+    <div class="row justify-content-center align-items-center">
+      <div class="text-center text-md-center">
+        <h1>
+          <div class="display-4 text-dark"><b>A GESTURE BASED-TOOL</div></b>
+          <div class="display-6 text-dark-50">For Sterile Browsing of Radiology Images</div>
+        </h1>
+        <div class="text-center d-none d-md-block m-1">
+          <img class="rounded mx-auto d-block" src="C:\Users\Chinna\OneDrive\Desktop\hand-animation.gif" width="780" height="550" alt="gesture img">
+        </div>
+        <div class=" my-2 text-center">
+          <a type="button" class="btn btn-primary btn-lg" href="{{ url_for('intro')}}">For more information..click here..</a>  
+          <a type="button" class="btn btn-success btn-lg" href="{{ url_for('image1')}}">Launch</a>   
+          </button>
+      </div>
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
