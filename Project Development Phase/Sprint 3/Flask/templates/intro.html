@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="home.css"-->
+    <style>
+      body {
+        background-image: url('https://i.pinimg.com/originals/9e/e2/bc/9ee2bc96f0fbdd4d5c60a78beea66f1c.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      </style>
+    <title>
+        Gesture Recognition System
+    </title>
+</head>
+
+
+<body>
+<!--navigation bar-->
+<nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container-xxl">
+    <a href="{{ url_for('home')}}" class="navbar-brand">
+      <span class="fw-normal  text-white">
+        Gesture Recognition System
+      </span>
+    </a>
+    <!--menu(toggle) button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--navbar links-->
+    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="{{ url_for('home')}}" class="nav-link active"><u><h5>Home</u></h5></a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('intro')}}" class="nav-link active"><u><h5>Introduction</u></h5></a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('image1')}}" class="nav-link active"><u><h5>Launch</u></h5></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container-fluid m-3">
+    <div class="row justify-content-center align-items-center">
+      <div class="text-center text-md-center">
+        <h1>
+          
+          <div class="display-2 text-white">About</div>
+          <br>
+          </h1>
+          <br>
+            <div class="display-10 text-white"><p> Humans can easily recognize bodies and sign language. This is made possible by a combination of visual and synaptic interactions that occurred during brain development. Reproducing this ability on a computer requires solving many questions, such as how to separate objects in images and which image capture and classification techniques are more appropriate.
+<br></p>	
+<p>In this gesture-based desktop automation project, the model is first trained with images of various hand gestures. Point to the numbers with your fingers like 1, 2, 3, 4. This model uses the built-in webcam to capture video images. Images of gestures captured in video frames are compared with pre-trained models to identify gestures. For example, if the gesture prediction is 0, the image will be stretched. 1 - The image is rotated 180°. 2 - The image will be scaled down. 3 - The image is swiped. 4 - The image is resized. 5 - The image is converted to grayscale, etc.</p>
+
+        </div>
+        
+        <div class=" my-2 text-center">
+          <a type="button" class="btn btn-primary btn-lg" href="{{ url_for('intro')}}">Click Here To Know More</a>  
+          <a type="button" class="btn btn-success btn-lg" href="{{ url_for('image1')}}">Launch</a>   
+          </button>
+      </div>
+    </div>
+<div class="text-center d-none d-md-block m-1">
+<marquee behavior="alternate" direction="right" scrollamount="10">
+<img src="https://earimediaprodweb.azurewebsites.net/Api/v1/Multimedia/99054fc0-8439-4225-8bda-8fe7f14b74d5/Rendition/low-res/Content/Public" width="350" height="250" alt="Natural" /> 
+<img src="https://thumbs.dreamstime.com/b/human-hand-number-gesture-illustration-128397275.jpg" width="350" height="250" alt="Natural" /> 
+<img src="https://www.marxentlabs.com/wp-content/uploads/2014/03/What-is-gesture-recognition-Gesture-recognition-defined1.jpg" width="350" height="250" alt="Natural" />
+</marquee>
+          </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
